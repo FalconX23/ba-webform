@@ -1,0 +1,2353 @@
+function v_get_config_variables(form_name){
+	console.log('v_get_config_variables started and form_name= '+form_name);
+	var variable_list='';
+	var entry=[];
+	var how_many_entries=0;
+	
+	if (form_name=='v_acs_animal_bite_vof'){
+		/*  v_get_config_variables('v_acs_animal_bite_vof') ;  //get all variable for form with new code
+		replacing this
+		 getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');    
+    getCosaVariablesSingle('ACS Animal Bite','current_title','common','current_title','txt_currenttitle');   //good
+
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_wildlifeoptions','rad_wildlifeoptions');        //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victim','victim');                          //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_break','rad_break');                            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victimsurvive','rad_victimsurvive');            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_severity','rad_severity');                      //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_loose','loose');                            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_bitinganimal','animal');              //good
+    getCosaVariablesMultiple('ACS Animal Bite','vector_biter','rad_vectorbiter','rad_vectorbiter');         
+    
+    getCosaVariablesMultiple('ACS Forms','common','rad_size','size');                                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned');   
+	//good
+	*/
+		      
+		entry[0]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[2]='S#ACS Animal Bite^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#ACS Animal Bite^animal^rad_wildlifeoptions^rad_wildlifeoptions';
+		entry[4]='M#ACS Animal Bite^animal^rad_victim^victim';
+		entry[5]='M#ACS Animal Bite^animal^rad_break^rad_break';
+		entry[6]='M#ACS Animal Bite^animal^rad_victimsurvive^rad_victimsurvive';
+		entry[7]='M#ACS Animal Bite^animal^rad_severity^rad_severity';
+		entry[8]='M#ACS Animal Bite^animal^rad_loose^loose';
+		entry[9]='M#ACS Animal Bite^animal^rad_bitinganimal^animal';
+		entry[10]='M#ACS Animal Bite^vector_biter^rad_vectorbiter^rad_vectorbiter';
+		entry[11]='M#ACS Forms^common^rad_size^size';
+		entry[12]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[13]='M#ACS Forms^common^rad_owned^owned';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	if (form_name=='acs_animal_bite_vof'){
+		/* 
+		v_get_config_variables('acs_animal_bite_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');    
+    getCosaVariablesSingle('ACS Animal Bite','current_title','common','current_title','txt_currenttitle');   //good
+
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_wildlifeoptions','rad_wildlifeoptions');        //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victim','victim');                          //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_break','rad_break');                            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victimsurvive','rad_victimsurvive');            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_severity','rad_severity');                      //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_loose','loose');                            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_bitinganimal','animal');              //good
+    getCosaVariablesMultiple('ACS Animal Bite','vector_biter','rad_vectorbiter','rad_vectorbiter');         
+    
+    getCosaVariablesMultiple('ACS Forms','common','rad_size','size');                                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned');                                     //good
+	*/
+		      
+		entry[0]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[2]='S#ACS Animal Bite^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#ACS Animal Bite^animal^rad_wildlifeoptions^rad_wildlifeoptions';
+		entry[4]='M#ACS Animal Bite^animal^rad_victim^victim';
+		entry[5]='M#ACS Animal Bite^animal^rad_break^rad_break';
+		entry[6]='M#ACS Animal Bite^animal^rad_victimsurvive^rad_victimsurvive';
+		entry[7]='M#ACS Animal Bite^animal^rad_severity^rad_severity';
+		entry[8]='M#ACS Animal Bite^animal^rad_loose^loose';
+		entry[9]='M#ACS Animal Bite^animal^rad_bitinganimal^animal';
+		entry[10]='M#ACS Animal Bite^vector_biter^rad_vectorbiter^rad_vectorbiter';
+		entry[11]='M#ACS Forms^common^rad_size^size';
+		entry[12]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[13]='M#ACS Forms^common^rad_owned^owned';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	if (form_name=='311_complmt_complnt_vof'){
+		
+	/*
+	v_get_config_variables('311_complmt_complnt_vof') ;  //get all variable for form with new codereplacing this
+    getCosaVariablesSingle('311 Complaint / Compliment','current_title','common','current_title','txt_currenttitle');  //good
+    getCosaVariablesSingle('Subject','311','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','cust_serv','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('311 Complaint / Compliment','common','rad_custserviceconcern','rad_custserviceconcern');                        //good
+//    getCosaVariablesMultiple('311 Complaint / Compliment','dept','sel_targetdept','sel_targetdept');                        //good
+//    getCosaVariablesMultiple('311 Complaint / Compliment','type','rad_comptype','rad_comptype');                        //good
+    getCosaVariablesMultiple('311 Complaint / Compliment','type','rad_comptype','rad_comptype');                        //good
+    getCosaVariablesMultiple('311 Complaint / Compliment','up_type','rad_complimenttype','rad_complimenttype');             
+   
+		*/
+		entry[0]='S#311 Complaint / Compliment^current_title^common^current_title^txt_currenttitle';
+		entry[1]='S#Subject^311^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^cust_serv^working^txt_reason^txt_reason';
+		entry[3]='M#311 Complaint / Compliment^common^rad_custserviceconcern^rad_custserviceconcern';
+		entry[4]='M#311 Complaint / Compliment^dept^sel_targetdept^sel_targetdept';
+		entry[5]='M#311 Complaint / Compliment^type^rad_comptype^rad_comptype';
+		entry[6]='';
+		entry[7]='M#311 Complaint / Compliment^up_type^rad_complimenttype^rad_complimenttype';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+if (form_name=='311_dockless_vehicle_vof'){
+		/*
+		v_get_config_variables('311_dockless_vehicle_vof') ;  //get all variable for form with new codereplacing this
+    getCosaVariablesSingle('311 Dockless Vehicle','current_title','common','current_title','txt_currenttitle');  //good
+    getCosaVariablesSingle('Subject','311','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','cust_serv','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('311 Dockless Vehicle','common','rad_docklessvehicle','rad_docklessvehicle');                        //good
+    getCosaVariablesMultiple('311 Dockless Vehicle','owner','rad_docklessowner','rad_docklessowner');                        //good
+    getCosaVariablesMultiple('311 Dockless Vehicle','owner1','rad_docklessowner1','rad_docklessowner1');                        //good
+    getCosaVariablesMultiple('311 Dockless Vehicle','concern','rad_docklessconcern','rad_docklessconcern');                        //good
+    getCosaVariablesMultiple('311 Dockless Vehicle','location','rad_docklesslocation','rad_docklesslocation');    
+	*/
+		entry[0]='S#311 Dockless Vehicle^current_title^common^current_title^txt_currenttitle';
+		entry[1]='S#Subject^311^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^cust_serv^working^txt_reason^txt_reason';
+		entry[3]='M#311 Dockless Vehicle^common^rad_docklessvehicle^rad_docklessvehicle';
+		entry[4]='M#311 Dockless Vehicle^owner^rad_docklessowner^rad_docklessowner';
+		entry[5]='M#311 Dockless Vehicle^owner1^rad_docklessowner1^rad_docklessowner1';
+		entry[6]='M#311 Dockless Vehicle^concern^rad_docklessconcern^rad_docklessconcern';
+		entry[7]='M#311 Dockless Vehicle^location^rad_docklesslocation^rad_docklesslocation';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='311_knowfeedback_vof'){
+		/*v_get_config_variables('311_knowfeedback_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','311','working','txt_subject','txt_subject');  
+    getCosaVariablesSingle('Reason','knowledge','working','txt_reason','txt_reason');  
+    getCosaVariablesSingle('311 Knowledge Feedback','le_eventcode','common','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('311 Knowledge Feedback','current_title','common','current_title','txt_currenttitle');  //good
+    
+    getCosaVariablesMultiple('311 Knowledge Feedback','common','txt_articlename','txt_articlename');  
+		
+		*/
+		entry[0]='S#Subject^311^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^knowledge^working^txt_reason^txt_reason';
+		entry[2]='S#311 Knowledge Feedback^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[3]='S#311 Knowledge Feedback^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#311 Knowledge Feedback^common^txt_articlename^txt_articlename';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='acs_animalcare_vof'){
+		/*v_get_config_variables('acs_animalcare_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');    
+    getCosaVariablesSingle('ACS Animal Care','current_title','common','current_title','txt_currenttitle');
+     
+    getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type' );
+    getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned' );
+    getCosaVariablesMultiple('ACS Forms','common','rad_size','size' );
+    getCosaVariablesMultiple('ACS Animal Care','common','rad_animal','animal' );
+//    getCosaVariablesMultiple('ACS Animal Care','common','rad_animal','rad_salesanimal' );
+    getCosaVariablesMultiple('ACS Animal Care','common','rad_nuisance_type','nuisance' );
+    getCosaVariablesMultiple('ACS Animal Care','sales','rad_saleslocation','rad_saleslocation' );
+    getCosaVariablesMultiple('ACS Animal Care','common','rad_contained','loose' );
+    
+    getCosaVariablesMultiple('ACS Animal Care','common','rad_animals_on_property','rad_animals_on_property' );
+		
+		*/
+		entry[0]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[2]='S#ACS Animal Care^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[4]='M#ACS Forms^common^rad_owned^owned';
+		entry[5]='M#ACS Forms^common^rad_size^size';
+		entry[6]='M#ACS Animal Care^common^rad_animal^animal';
+		entry[7]='M#ACS Animal Care^common^rad_nuisance_type^nuisance';
+		entry[8]='M#ACS Animal Care^sales^rad_saleslocation^rad_saleslocation';
+		entry[9]='M#ACS Animal Care^common^rad_contained^loose';
+		entry[10]='M#ACS Animal Care^common^rad_animals_on_property^rad_animals_on_property';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='acs_cruelty_neglect_vof'){
+		/*v_get_config_variables('acs_cruelty_neglect_vof') ;  //get all variable for form with new codereplacing this
+		
+    getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');    
+//    getCosaVariablesSingle('ACS Cruelty-Neglect','current_title','common','current_title','txt_currenttitle');
+
+
+    getCosaVariablesMultiple('ACS Cruelty-Neglect','common','rad_crueltytype','crueltytype');
+    getCosaVariablesMultiple('ACS Cruelty-Neglect','common','rad_physicalcondition','rad_physicalcondition');
+    getCosaVariablesMultiple('ACS Cruelty-Neglect','common','rad_attention','attention');
+    
+    getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');
+    getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned');
+    getCosaVariablesMultiple('ACS Forms','common','rad_animaltype2','animal');
+    getCosaVariablesMultiple('ACS Forms','common','rad_ownerhome','owner_home');
+    getCosaVariablesMultiple('ACS Forms','common','rad_size','size');
+		
+		*/
+		entry[0]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[2]='M#ACS Cruelty-Neglect^common^rad_crueltytype^crueltytype';
+		entry[3]='M#ACS Cruelty-Neglect^common^rad_physicalcondition^rad_physicalcondition';
+		entry[4]='M#ACS Cruelty-Neglect^common^rad_attention^attention';
+		entry[5]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[6]='M#ACS Forms^common^rad_owned^owned';
+		entry[7]='M#ACS Forms^common^rad_animaltype2^animal';
+		entry[8]='M#ACS Forms^common^rad_ownerhome^owner_home';
+		entry[9]='M#ACS Forms^common^rad_size^size';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+if (form_name=='acs_injured_sick_vof'){
+		/*v_get_config_variables('acs_injured_sick_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('ACS Injured-Sick Animal','le_eventcode','common','le_eventcode','le_eventcode');
+        getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+        getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');                        // for Workings Page
+        getCosaVariablesSingle('ACS Injured-Sick Animal','current_title','common','current_title','txt_currenttitle');
+        getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');  
+        getCosaVariablesMultiple('ACS Forms','common','rad_animaltype2','animal');  
+        getCosaVariablesMultiple('ACS Forms','common','rad_size','size'); 
+        getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned'); 
+        getCosaVariablesMultiple('ACS Injured-Sick Animal','common','rad_injuryconcern','injury');
+		
+	
+		*/
+		entry[0]='S#ACS Injured-Sick Animal^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[3]='S#ACS Injured-Sick Animal^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[5]='M#ACS Forms^common^rad_animaltype2^animal';
+		entry[6]='M#ACS Forms^common^rad_size^size';
+		entry[7]='M#ACS Forms^common^rad_owned^owned';
+		entry[8]='M#ACS Injured-Sick Animal^common^rad_injuryconcern^injury';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='acs_officerstandby_vof'){
+		/*v_get_config_variables('acs_officerstandby_vof') ;  //get all variable for form with new codereplacing this
+		
+        getCosaVariablesSingle('ACS Officer Standby','le_eventcode','common','le_eventcode','le_eventcode');
+        getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+        getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');                        // for Workings Page
+        getCosaVariablesSingle('ACS Officer Standby','current_title','common','current_title','txt_currenttitle');
+        getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');  
+        getCosaVariablesMultiple('ACS Forms','common','rad_animaltype2','animal');  
+        getCosaVariablesMultiple('ACS Forms','common','rad_size','size'); 
+        getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned'); 
+        getCosaVariablesMultiple('ACS Officer Standby','common','rad_officertype','rad_officertype');
+        getCosaVariablesMultiple('ACS Officer Standby','common','rad_concern','concern');
+		
+		
+		
+		*/
+		entry[0]='S#ACS Officer Standby^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[3]='S#ACS Officer Standby^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[5]='M#ACS Forms^common^rad_animaltype2^animal';
+		entry[6]='M#ACS Forms^common^rad_size^size';
+		entry[7]='M#ACS Forms^common^rad_owned^owned';
+		entry[8]='M#ACS Officer Standby^common^rad_officertype^rad_officertype';
+		entry[9]='M#ACS Officer Standby^common^rad_concern^concern';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='acs_trapped_confined_vof'){
+		/*v_get_config_variables('acs_trapped_confined_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('ACS Trapped Confined','le_eventcode','common','le_eventcode','le_eventcode');
+        getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+        getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');                        // for Workings Page
+
+        console.log('in getcosavariable');
+        getCosaVariablesSingle('ACS Trapped Confined','current_title','common','current_title','txt_currenttitle');
+        getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');  
+        getCosaVariablesMultiple('ACS Forms','common','rad_animaltype2','animal'); 
+        getCosaVariablesMultiple('ACS Forms','common','rad_size','size'); 
+        getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned'); 
+        getCosaVariablesMultiple('ACS Trapped Confined','common','rad_trappedtype','trap_type');  
+        	
+
+		
+		*/
+		entry[0]='S#ACS Trapped Confined^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[3]='S#ACS Trapped Confined^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[5]='M#ACS Forms^common^rad_animaltype2^animal';
+		entry[6]='M#ACS Forms^common^rad_size^size';
+		entry[7]='M#ACS Forms^common^rad_owned^owned';
+		entry[8]='M#ACS Trapped Confined^common^rad_trappedtype^trap_type';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	if (form_name=='acs_thirdshift_vof'){
+		/* 
+		v_get_config_variables('acs_thirdshift_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','acs','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','field_ops','working','txt_reason','txt_reason');    
+    
+
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_wildlifeoptions','rad_wildlifeoptions');        //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victim','victim');                          //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_victimsurvive','rad_victimsurvive');            //good
+    getCosaVariablesMultiple('ACS Animal Bite','animal','rad_bitinganimal','animal');              //good
+    getCosaVariablesMultiple('ACS Animal Bite','vector_biter','rad_vectorbiter','rad_vectorbiter');         
+    
+    getCosaVariablesMultiple('ACS Forms','common','rad_size','size');                                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_locationtype','location_type');                       //good
+    getCosaVariablesMultiple('ACS Forms','common','rad_owned','owned');                                     //good
+	*/
+		      
+		entry[0]='S#Subject^acs^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^field_ops^working^txt_reason^txt_reason';
+		entry[2]='M#ACS Animal Bite^animal^rad_wildlifeoptions^rad_wildlifeoptions';
+		entry[3]='M#ACS Animal Bite^animal^rad_victim^victim';
+		entry[4]='M#ACS Officer Standby^common^rad_officertype^rad_officertype';
+		entry[5]='M#ACS Animal Bite^animal^rad_victimsurvive^rad_victimsurvive';
+		entry[6]='M#ACS Third Shift^common^rad_nuisance_type^nuisance';
+		entry[7]='M#ACS Animal Bite^animal^rad_bitinganimal^animal';
+		entry[8]='M#ACS Forms^common^rad_size^size';
+		entry[9]='M#ACS Forms^common^rad_locationtype^location_type';
+		entry[10]='M#ACS Forms^common^rad_owned^owned';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+if (form_name=='cosa_vof_agent'){
+		/*v_get_config_variables('cosa_vof_agent') ;  //get all variable for form with new codereplacing this
+		none so far
+		
+		*/
+		entry[0]='';
+		entry[1]='';
+		entry[2]='';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+if (form_name=='dsd_alleyconcerns_vof'){
+		/*
+		v_get_config_variables('dsd_alleyconcerns_vof') ;  //get all variable for form with new codereplacing this
+    getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                // for Workings Page   
+      //good
+    
+//    getCosaVariablesMultiple('DSD Alley Concerns','common','rad_alleyconcern','rad_alleyconcern'); 
+    getCosaVariablesMultiple('DSD Alley Concerns','common','rad_alleyconcern','issueloc'); 
+//    getCosaVariablesMultiple('DSD Alley Concerns','swmaint','rad_swservice','rad_swservice');      
+    getCosaVariablesMultiple('DSD Alley Concerns','swmaint','rad_swservice','location'); 
+//    getCosaVariablesMultiple('DSD Alley Concerns','flooded','rad_flooded','rad_flooded'); 
+    getCosaVariablesMultiple('DSD Alley Concerns','flooded','rad_flooded','issue_other');
+		
+		
+	
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Alley Concerns^common^rad_alleyconcern^issueloc';
+		entry[3]='M#DSD Alley Concerns^swmaint^rad_swservice^location';
+		entry[4]='M#DSD Alley Concerns^flooded^rad_flooded^issue_other';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_graffiti_vof'){
+		/*v_get_config_variables('dsd_graffiti_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+
+//    getCosaVariablesMultiple('DSD Graffiti','common','rad_graffitiplacement','rad_graffitiplacement');
+    getCosaVariablesMultiple('DSD Graffiti','common','rad_graffitiplacement','issue');   
+//    getCosaVariablesMultiple('DSD Graffiti','property','rad_propertytype','rad_propertytype'); 
+    getCosaVariablesMultiple('DSD Graffiti','property','rad_propertytype','property_type');           
+//    getCosaVariablesMultiple('DSD Graffiti','park','rad_facilitytype','rad_facilitytype'); 
+    getCosaVariablesMultiple('DSD Graffiti','park','rad_facilitytype','location');            
+//    getCosaVariablesMultiple('DSD Graffiti','sign','rad_signtype','rad_signtype');  
+    getCosaVariablesMultiple('DSD Graffiti','sign','rad_signtype','issueloc');
+		
+		
+
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Graffiti^common^rad_graffitiplacement^issue';
+		entry[3]='M#DSD Graffiti^property^rad_propertytype^property_type';
+		entry[4]='M#DSD Graffiti^park^rad_facilitytype^location';
+		entry[5]='M#DSD Graffiti^sign^rad_signtype^issueloc';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_illegaldumping_vof'){
+		/*v_get_config_variables('dsd_illegaldumping_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+    
+//    getCosaVariablesMultiple('DSD Illegal Dumping','common','rad_dumpingconcern','rad_dumpingconcern');
+    getCosaVariablesMultiple('DSD Illegal Dumping','common','rad_dumpingconcern','issue'); 
+		
+		
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Illegal Dumping^common^rad_dumpingconcern^issue';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_illegalparking_vof'){
+		/*v_get_config_variables('dsd_illegalparking_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject'); 
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason'); 
+      //good
+    
+//    getCosaVariablesMultiple('DSD Illegal Parking','common','rad_parkingconcern','rad_parkingconcern');  
+    getCosaVariablesMultiple('DSD Illegal Parking','common','rad_parkingconcern','issue');  
+//    getCosaVariablesMultiple('DSD Illegal Parking','placement','rad_parkinglocation','rad_parkinglocation'); //good
+    getCosaVariablesMultiple('DSD Illegal Parking','placement','rad_parkinglocation','location'); //good
+//    getCosaVariablesMultiple('DSD Illegal Parking','nearcurb','rad_nearcurb','rad_nearcurb'); //good
+    getCosaVariablesMultiple('DSD Illegal Parking','nearcurb','rad_nearcurb','issueloc'); //good
+    
+	
+	   
+		
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Illegal Parking^common^rad_parkingconcern^issue';
+		entry[3]='M#DSD Illegal Parking^placement^rad_parkinglocation^location';
+		entry[4]='M#DSD Illegal Parking^nearcurb^rad_nearcurb^issueloc';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+if (form_name=='dsd_junkvehicle_vof'){
+		/*v_get_config_variables('dsd_junkvehicle_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');  //good
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');  //good
+    getCosaVariablesSingle('DSD Junk Vehicle','current_title','common','current_title','txt_currenttitle');  //good
+    //getCosaVariablesMultiple('DSD Junk Vehicle','common','rad_placement','rad_placement');
+    getCosaVariablesMultiple('DSD Junk Vehicle','common','rad_placement','issueloc');  
+		
+	
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='S#DSD Junk Vehicle^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#DSD Junk Vehicle^common^rad_placement^issueloc';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_neighborhoodltg_vof'){
+		/*v_get_config_variables('dsd_neighborhoodltg_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('DSD Neighborhood Lighting','current_title','common','current_title','txt_currenttitle');  //good
+    getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','land','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('DSD Neighborhood Lighting','common','rad_lightingconcern','rad_lightingconcern');                        //good
+    getCosaVariablesMultiple('DSD Neighborhood Lighting','intersection','rad_alreadylight','rad_alreadylight');     
+		
+
+		
+		*/
+		entry[0]='S#DSD Neighborhood Lighting^current_title^common^current_title^txt_currenttitle';
+		entry[1]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^land^working^txt_reason^txt_reason';
+		entry[3]='M#DSD Neighborhood Lighting^common^rad_lightingconcern^rad_lightingconcern';
+		entry[4]='M#DSD Neighborhood Lighting^intersection^rad_alreadylight^rad_alreadylight';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_overgrownyard_vof'){
+		/*v_get_config_variables('dsd_overgrownyard_vof') ;  //get all variable for form with new codereplacing this
+		getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+//    getCosaVariablesSingle('DSD Overgrown Yard','le_eventcode','common','le_eventcode','le_eventcode');        //good
+      //good
+    getCosaVariablesSingle('DSD Overgrown Yard','current_title','common','current_title','txt_currenttitle'); 
+    // getCosaVariablesMultiple('DSD Overgrown Yard','common','rad_lawntrashconcern','rad_lawntrashconcern');   
+    getCosaVariablesMultiple('DSD Overgrown Yard','common','rad_lawntrashconcern','issue'); 
+    getCosaVariablesMultiple('DSD Overgrown Yard','blocking','rad_blocking_row','rad_blocking_row');  //good
+		
+		
+		
+		
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='S#DSD Overgrown Yard^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#DSD Overgrown Yard^common^rad_lawntrashconcern^issue';
+		entry[4]='M#DSD Overgrown Yard^blocking^rad_blocking_row^rad_blocking_row';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_permits_vof'){
+		/*v_get_config_variables('dsd_permits_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+//    getCosaVariablesSingle('DSD Permits','le_eventcode','common','le_eventcode','le_eventcode');        //good
+      //good
+    getCosaVariablesMultiple('DSD Permits','common','rad_permitconcern','issue');                        //good
+    getCosaVariablesMultiple('DSD Permits','mobile','rad_facilitytype','issueloc');  
+    getCosaVariablesMultiple('DSD Permits','rentals','rad_rentalunitloc','location');  //good
+    getCosaVariablesMultiple('DSD Permits','concern','rad_status','issue_other');  //good
+		
+	
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Permits^common^rad_permitconcern^issue';
+		entry[3]='M#DSD Permits^mobile^rad_facilitytype^issueloc';
+		entry[4]='M#DSD Permits^rentals^rad_rentalunitloc^location';
+		entry[5]='M#DSD Permits^concern^rad_status^issue_other';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_propertymaint_vof'){
+		/*v_get_config_variables('dsd_propertymaint_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');        //good
+
+      //good
+   // getCosaVariablesMultiple('DSD Property Maint','common','rad_maintconcern','rad_maintconcern');                        //good
+    getCosaVariablesMultiple('DSD Property Maint','common','rad_maintconcern','issue');                        //good
+   // getCosaVariablesMultiple('DSD Property Maint','occupied','rad_occupied','rad_occupied');
+    getCosaVariablesMultiple('DSD Property Maint','occupied','rad_occupied','occupied'); 
+		
+		
+	
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Property Maint^common^rad_maintconcern^issue';
+		entry[3]='M#DSD Property Maint^occupied^rad_occupied^occupied';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_propstructure_vof'){
+		/*v_get_config_variables('dsd_propstructure_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+//    getCosaVariablesSingle('DSD Property Structure','le_eventcode','common','le_eventcode','le_eventcode');        //good
+      //good
+    
+    //getCosaVariablesMultiple('DSD Property Structure','common','rad_propstructure','rad_propstructure');
+    getCosaVariablesMultiple('DSD Property Structure','common','rad_propstructure','issue');
+    //getCosaVariablesMultiple('DSD Property Structure','fence','rad_fenceconcern','rad_fenceconcern');
+    getCosaVariablesMultiple('DSD Property Structure','fence','rad_fenceconcern','issuedis');
+    //getCosaVariablesMultiple('DSD Property Structure','housing','rad_propertytype','rad_propertytype');   
+    getCosaVariablesMultiple('DSD Property Structure','housing','rad_propertytype','property_type');
+    //getCosaVariablesMultiple('DSD Property Structure','intext','rad_intextconcern','rad_intextconcern'); 
+    getCosaVariablesMultiple('DSD Property Structure','intext','rad_intextconcern','property_other');
+    getCosaVariablesMultiple('DSD Property Structure','leak','rad_leaking','rad_leaking');
+		
+		
+			*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Property Structure^common^rad_propstructure^issue';
+		entry[3]='M#DSD Property Structure^fence^rad_fenceconcern^issuedis';
+		entry[4]='M#DSD Property Structure^housing^rad_propertytype^property_type';
+		entry[5]='M#DSD Property Structure^intext^rad_intextconcern^property_other';
+		entry[6]='M#DSD Property Structure^leak^rad_leaking^rad_leaking';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_sidewalkobstruct_vof'){
+		/*v_get_config_variables('dsd_sidewalkobstruct_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');  //good
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');  //good
+      //good
+   // getCosaVariablesMultiple('DSD Sidewalk Obstructions','common','rad_sidewalkconcerns','rad_sidewalkconcerns');
+    getCosaVariablesMultiple('DSD Sidewalk Obstructions','common','rad_sidewalkconcerns','issue');
+   // getCosaVariablesMultiple('DSD Sidewalk Obstructions','temporary','rad_tempobstruction','rad_tempobstruction');       //good
+    getCosaVariablesMultiple('DSD Sidewalk Obstructions','temporary','rad_tempobstruction','issue_other');       //good
+    
+	
+	
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Sidewalk Obstructions^common^rad_sidewalkconcerns^issue';
+		entry[3]='M#DSD Sidewalk Obstructions^temporary^rad_tempobstruction^issue_other';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+if (form_name=='dsd_vacantproperty_vof'){
+		/*v_get_config_variables('dsd_vacantproperty_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');                 // for Workings Page
+    
+    
+   // getCosaVariablesMultiple('DSD Vacant Property','common','rad_vacantissue','rad_vacantissue');                        //good
+    getCosaVariablesMultiple('DSD Vacant Property','common','rad_vacantissue','issue');                        //good
+    
+	
+		
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Vacant Property^common^rad_vacantissue^issue';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_waterconcerns_vof'){
+		/*v_get_config_variables('dsd_waterconcerns_vof') ;  //get all variable for form with new codereplacing this
+		getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');   
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');   
+    
+    
+   // getCosaVariablesMultiple('DSD Water Concerns','common','rad_waterconcern','rad_waterconcern');  
+    getCosaVariablesMultiple('DSD Water Concerns','common','rad_waterconcern','issue');
+  //  getCosaVariablesMultiple('DSD Water Concerns','standing','rad_standingloc','rad_standingloc');
+    getCosaVariablesMultiple('DSD Water Concerns','standing','rad_standingloc','location');
+    getCosaVariablesMultiple('DSD Water Concerns','common','rad_leaking','rad_leaking');
+		
+		
+    );
+		*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Water Concerns^common^rad_waterconcern^issue';
+		entry[3]='M#DSD Water Concerns^standing^rad_standingloc^location';
+		entry[4]='M#DSD Water Concerns^common^rad_leaking^rad_leaking';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='dsd_zoning_vof'){
+		/*v_get_config_variables('dsd_zoning_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('Subject','dsd','working','txt_subject','txt_subject');  
+    getCosaVariablesSingle('Reason','code','working','txt_reason','txt_reason');  
+      //good
+    
+    //getCosaVariablesMultiple('DSD Zoning','common','rad_zoningconcern','rad_zoningconcern');                        //good
+    getCosaVariablesMultiple('DSD Zoning','common','rad_zoningconcern','issue');   
+		
+		
+			*/
+		entry[0]='S#Subject^dsd^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^code^working^txt_reason^txt_reason';
+		entry[2]='M#DSD Zoning^common^rad_zoningconcern^issue';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='mh_food_illness_vof'){
+		/*v_get_config_variables('mh_food_illness_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('Subject','mh','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','food_estab','working','txt_reason','txt_reason');                 // for Workings Page
+//    getCosaVariablesMultiple('MH Smoking','common','rad_concern','rad_concern');   
+		
+		 
+		*/
+		entry[0]='S#Subject^mh^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^food_estab^working^txt_reason^txt_reason';
+		entry[2]='';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='mh_foodsaleswopermit_vof'){
+		/*
+		v_get_config_variables('mh_foodsaleswopermit_vof') ;  //get all variable for form with new codereplacing this
+    
+   getCosaVariablesSingle('Subject','mh','working','txt_subject','txt_subject');                // for Workings Page
+   getCosaVariablesSingle('Reason','food_estab','working','txt_reason','txt_reason');                 // for Workings Page
+   getCosaVariablesSingle('MH Food Sales Without Permit','current_title','common','current_title','txt_currenttitle');  //good
+   getCosaVariablesSingle('MH Food Sales Without Permit','le_eventcode','common','le_eventcode','le_eventcode');       
+   getCosaVariablesMultiple('MH Food Sales Without Permit','common','rad_facilitytype','rad_facilitytype');                        //good
+    
+	
+	 
+		
+		*/
+		entry[0]='S#Subject^mh^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^food_estab^working^txt_reason^txt_reason';
+		entry[2]='S#MH Food Sales Without Permit^current_title^common^current_title^txt_currenttitle';
+		entry[3]='S#MH Food Sales Without Permit^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[4]='M#MH Food Sales Without Permit^common^rad_facilitytype^rad_facilitytype';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='mh_generalsanitation_vof'){
+		/*v_get_config_variables('mh_generalsanitation_vof') ;  //get all variable for form with new codereplacing this
+		
+    getCosaVariablesSingle('Subject','mh','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','food_estab','working','txt_reason','txt_reason'); 
+     //good
+    
+    getCosaVariablesMultiple('MH General Sanitation','common','rad_concern','rad_concern');  
+		
+	
+     
+		*/
+		entry[0]='S#Subject^mh^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^food_estab^working^txt_reason^txt_reason';
+		entry[2]='M#MH General Sanitation^common^rad_concern^rad_concern';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='mh_renewal_license_vof'){
+		/*v_get_config_variables('mh_renewal_license_vof') ;  //get all variable for form with new codereplacing this
+		 
+   getCosaVariablesSingle('Subject','mh','working','txt_subject','txt_subject');                // for Workings Page
+   getCosaVariablesSingle('Reason','fac_lic','working','txt_reason','txt_reason');                 // for Workings Page
+   getCosaVariablesSingle('MH License Renewal Invoice Request','current_title','common','current_title','txt_currenttitle');  //good
+   getCosaVariablesSingle('MH License Renewal Invoice Request','le_eventcode','common','le_eventcode','le_eventcode');       
+	
+		*/
+		entry[0]='S#Subject^mh^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^fac_lic^working^txt_reason^txt_reason';
+		entry[2]='S#MH License Renewal Invoice Request^current_title^common^current_title^txt_currenttitle';
+		entry[3]='S#MH License Renewal Invoice Request^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='mh_smoking_vof'){
+		/*v_get_config_variables('mh_smoking_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','mh','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','food_estab','working','txt_reason','txt_reason');                 // for Workings Page
+    
+    
+    getCosaVariablesMultiple('MH Smoking','common','rad_concern','rad_concern');                        //good
+    
+		
+		*/
+		entry[0]='S#Subject^mh^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^food_estab^working^txt_reason^txt_reason';
+		entry[2]='M#MH Smoking^common^rad_concern^rad_concern';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='ohp_places_i_love_vof'){
+		/*v_get_config_variables('ohp_places_i_love_vof') ;  //get all variable for form with new codereplacing this
+		
+		 getCosaVariablesSingle('OHP Places I Love','le_eventcode','common','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('OHP Places I Love','current_title','common','current_title','txt_currenttitle');  //good
+    getCosaVariablesSingle('Subject','ohp','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','hist_preserv','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('OHP Places I Love','common','rad_storytype','rad_storytype');                        //good
+    getCosaVariablesMultiple('OHP Places I Love','importance','rad_importance','rad_importance');                        //good
+    getCosaVariablesMultiple('OHP Places I Love','associated','rad_associated','rad_associated');                        //good
+    getCosaVariablesMultiple('OHP Places I Love','culture','rad_culturalidentity','rad_culturalidentity');   
+		
+
+		
+		
+		*/
+		entry[0]='S#OHP Places I Love^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#OHP Places I Love^current_title^common^current_title^txt_currenttitle';
+		entry[2]='S#Subject^ohp^working^txt_subject^txt_subject';
+		entry[3]='';
+		entry[4]='S#Reason^hist_preserv^working^txt_reason^txt_reason';
+		entry[5]='M#OHP Places I Love^common^rad_storytype^rad_storytype';
+		entry[6]='M#OHP Places I Love^importance^rad_importance^rad_importance';
+		entry[7]='M#OHP Places I Love^associated^rad_associated^rad_associated';
+		entry[8]='M#OHP Places I Love^culture^rad_culturalidentity^rad_culturalidentity';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_elect_lighting_vof'){
+		/*v_get_config_variables('par_elect_lighting_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');        //good
+    getCosaVariablesSingle('PAR Electrical Lighting','le_eventcode','lighting','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('PAR Electrical Lighting','current_title','common','current_title','txt_currenttitle');  //good
+    
+    getCosaVariablesMultiple('PAR Electrical Lighting','common','rad_lightinglocation','rad_lightinglocation');                        //good
+    
+	
+    
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='S#PAR Electrical Lighting^le_eventcode^lighting^le_eventcode^le_eventcode';
+		entry[3]='S#PAR Electrical Lighting^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#PAR Electrical Lighting^common^rad_lightinglocation^rad_lightinglocation';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_graffiti_vof'){
+		/*v_get_config_variables('par_graffiti_vof') ;  //get all variable for form with new codereplacing this
+		
+    getCosaVariablesSingle('PAR Graffiti','le_eventcode','graffiti','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('PAR Graffiti','current_title','common','current_title','txt_currenttitle');  //good
+    getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesMultiple('PAR Graffiti','common','rad_graffitilocation','rad_graffitilocation');                        //good
+    
+	
+		*/
+		entry[0]='S#PAR Graffiti^le_eventcode^graffiti^le_eventcode^le_eventcode';
+		entry[1]='S#PAR Graffiti^current_title^common^current_title^txt_currenttitle';
+		entry[2]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[3]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[4]='M#PAR Graffiti^common^rad_graffitilocation^rad_graffitilocation';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_park_sanitation_vof'){
+		/*v_get_config_variables('par_park_sanitation_vof') ;  //get all variable for form with new codereplacing this
+		getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    
+    
+    getCosaVariablesMultiple('PAR Park Sanitation','common','rad_sanitationconcern','rad_sanitationconcern');   
+    getCosaVariablesMultiple('PAR Park Sanitation','toilets','rad_portableconcern','rad_portableconcern');                        //good
+    getCosaVariablesMultiple('PAR Park Sanitation','common','rad_parkcategory','rad_parkcategory');       
+		
+		
+		
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='M#PAR Park Sanitation^common^rad_sanitationconcern^rad_sanitationconcern';
+		entry[2]='M#PAR Park Sanitation^toilets^rad_portableconcern^rad_portableconcern';
+		entry[3]='M#PAR Park Sanitation^common^rad_parkcategory^rad_parkcategory';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='par_parkimprove_rqst_vof'){
+		/*v_get_config_variables('par_parkimprove_rqst_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','projects','working','txt_reason','txt_reason');        //good
+    getCosaVariablesSingle('PAR Improve Request','le_eventcode','improve','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('PAR Improve Request','current_title','common','current_title','txt_currenttitle');  //good
+    
+    
+		
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^projects^working^txt_reason^txt_reason';
+		entry[2]='S#PAR Improve Request^le_eventcode^improve^le_eventcode^le_eventcode';
+		entry[3]='S#PAR Improve Request^current_title^common^current_title^txt_currenttitle';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_parks_internal_vof'){
+		/*v_get_config_variables('par_parks_internal_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');        //good
+//    getCosaVariablesSingle('PAR Parks Internal','le_eventcode','common','le_eventcode','le_eventcode');        //good
+    getCosaVariablesSingle('PAR Parks Internal','current_title','common','current_title','txt_currenttitle');  //good
+    
+    getCosaVariablesMultiple('PAR Parks Internal','common','sel_parkconcern','sel_parkconcern');                        //good
+    getCosaVariablesMultiple('PAR Parks Internal','sanitation','rad_sanitationtype','rad_sanitationtype');                        //good
+    getCosaVariablesMultiple('PAR Parks Internal','sanitation','rad_locationtype','rad_locationtype');  
+    getCosaVariablesMultiple('PAR Parks Internal','equip','rad_equipmaint','rad_equipmaint');  
+    getCosaVariablesMultiple('PAR Parks Internal','trees','rad_treeconcern','rad_treeconcern'); 
+    getCosaVariablesMultiple('PAR Parks Internal','toilets','rad_toiletconcern','rad_toiletconcern');  
+		
+
+		
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='S#PAR Parks Internal^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#PAR Parks Internal^common^sel_parkconcern^sel_parkconcern';
+		entry[4]='M#PAR Parks Internal^sanitation^rad_sanitationtype^rad_sanitationtype';
+		entry[5]='M#PAR Parks Internal^sanitation^rad_locationtype^rad_locationtype';
+		entry[6]='M#PAR Parks Internal^equip^rad_equipmaint^rad_equipmaint';
+		entry[7]='M#PAR Parks Internal^trees^rad_treeconcern^rad_treeconcern';
+		entry[8]='M#PAR Parks Internal^toilets^rad_toiletconcern^rad_toiletconcern';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_playgrnd_fitness_vof'){
+		/*v_get_config_variables('par_playgrnd_fitness_vof') ;  //get all variable for form with new codereplacing this
+		auditInsert(sessionId, formName, 'FORM LOAD', 'INITIAL FORM LOAD', '');
+    getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');        //good
+    
+    
+    getCosaVariablesMultiple('PAR Equip Maintenance','common','rad_playfitnessconcern','rad_playfitnessconcern'); 
+		
+		
+	
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='M#PAR Equip Maintenance^common^rad_playfitnessconcern^rad_playfitnessconcern';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_plumb_drinkfntns_vof'){
+		/*v_get_config_variables('par_plumb_drinkfntns_vof') ;  //get all variable for form with new codereplacing this
+		
+		getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');  //good
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');  //good  
+        
+   
+    getCosaVariablesMultiple('PAR Plumbing DrinkFntns','common','rad_plumbingconcern','issue');                        //good
+    getCosaVariablesMultiple('PAR Plumbing DrinkFntns','common','rad_irrigationconcern','rad_irrigationconcern');   
+		
+		
+		
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='M#PAR Plumbing DrinkFntns^common^rad_plumbingconcern^issue';
+		entry[3]='M#PAR Plumbing DrinkFntns^common^rad_irrigationconcern^rad_irrigationconcern';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='par_sportcourtmaint_vof'){
+		/*v_get_config_variables('par_sportcourtmaint_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');        //good
+    
+//    getCosaVariablesSingle('PAR Sportsfield Maint','le_eventcode','common','le_eventcode','le_eventcode');        //good
+    
+    getCosaVariablesMultiple('PAR Sportsfield Maint','type','rad_courttype','rad_courttype');
+    getCosaVariablesMultiple('PAR Sportsfield Maint','common','rad_fieldcourtconcern','rad_fieldcourtconcern');  
+		
+		
+
+		
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='M#PAR Sportsfield Maint^type^rad_courttype^rad_courttype';
+		entry[3]='M#PAR Sportsfield Maint^common^rad_fieldcourtconcern^rad_fieldcourtconcern';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_trees_vof'){
+		/*v_get_config_variables('par_trees_vof') ;  //get all variable for form with new codereplacing this
+		getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');        //good
+    getCosaVariablesSingle('Reason','urban_forestry','working','txt_reason','txt_reason');        //good
+//    getCosaVariablesSingle('PAR Trees','le_eventcode','common','le_eventcode','le_eventcode');        //good
+      //good
+    
+    getCosaVariablesMultiple('PAR Trees','common','rad_treeconcern','rad_treeconcern');                        //good
+    getCosaVariablesMultiple('PAR Trees','common','rad_treelocation','rad_treelocation');  
+    getCosaVariablesMultiple('PAR Trees','passible','rad_passible','rad_passible');  
+    getCosaVariablesMultiple('PAR Trees','alley','rad_swservice','rad_swservice');  
+		
+			
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^urban_forestry^working^txt_reason^txt_reason';
+		entry[2]='M#PAR Trees^common^rad_treeconcern^rad_treeconcern';
+		entry[3]='M#PAR Trees^common^rad_treelocation^rad_treelocation';
+		entry[4]='M#PAR Trees^passible^rad_passible^rad_passible';
+		entry[5]='M#PAR Trees^alley^rad_swservice^rad_swservice';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='par_waterfeatures_vof'){
+		/*v_get_config_variables('par_waterfeatures_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','par','working','txt_subject','txt_subject');    
+    getCosaVariablesSingle('Reason','trades','working','txt_reason','txt_reason');        //good
+    
+    getCosaVariablesMultiple('PAR Water Features','common','rad_featureconcern','rad_featureconcern');                        //good
+    getCosaVariablesMultiple('PAR Water Features','pool','rad_pooltype','rad_pooltype');     
+	
+			
+		*/
+		entry[0]='S#Subject^par^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^trades^working^txt_reason^txt_reason';
+		entry[2]='M#PAR Water Features^common^rad_featureconcern^rad_featureconcern';
+		entry[3]='M#PAR Water Features^pool^rad_pooltype^rad_pooltype';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='swm_carts_vof'){
+		/*v_get_config_variables('swm_carts_vof') ;  //get all variable for form with new codereplacing this
+		
+		  getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');
+      getCosaVariablesSingle('Reason','sw','working','txt_reason','txt_reason');
+      getCosaVariablesMultiple('SWM Carts','common','rad_cartissue','rad_cartissue');
+		
+	
+		
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^sw^working^txt_reason^txt_reason';
+		entry[2]='M#SWM Carts^common^rad_cartissue^rad_cartissue';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='swm_contamination_vof'){
+		/*v_get_config_variables('swm_contamination_vof') ;  //get all variable for form with new codereplacing this
+		
+    getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');
+    getCosaVariablesSingle('Reason','sw','working','txt_reason','txt_reason');
+    
+
+    getCosaVariablesMultiple('SWM Contamination','common','rad_contaminationtype','rad_contaminationtype');
+    getCosaVariablesMultiple('SWM Contamination','common','sel_carttypesize','sel_carttypesize');
+
+	
+		
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^sw^working^txt_reason^txt_reason';
+		entry[2]='M#SWM Contamination^common^rad_contaminationtype^rad_contaminationtype';
+		entry[3]='M#SWM Contamination^common^sel_carttypesize^sel_carttypesize';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='swm_deadanimal_vof'){
+		/*v_get_config_variables('swm_deadanimal_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','sw_misc','working','txt_reason','txt_reason');                        // for Workings Page
+    getCosaVariablesSingle('SWM Deadanimal','current_title','common','current_title','txt_currenttitle');
+    
+    console.log('in Ready, next to load = rad_curbside');
+    getCosaVariablesMultiple('SWM Deadanimal','curb','rad_curbside','rad_curbside');
+    getCosaVariablesMultiple('SWM Deadanimal','other','rad_otheranimal','rad_otheranimal');
+		
+	
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^sw_misc^working^txt_reason^txt_reason';
+		entry[2]='S#SWM Deadanimal^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#SWM Deadanimal^curb^rad_curbside^rad_curbside';
+		entry[4]='M#SWM Deadanimal^other^rad_otheranimal^rad_otheranimal';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='swm_missedservice_vof'){
+		/*v_get_config_variables('swm_missedservice_vof') ;  //get all variable for form with new codereplacing this
+		
+    getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','sw','working','txt_reason','txt_reason');                        // for Workings Page
+    getCosaVariablesSingle('SWM Missed Service','current_title','common','current_title','txt_currenttitle');  //good
+
+    getCosaVariablesMultiple('SWM Missed Service','common','rad_missedservice','rad_missedservice');    //good
+    getCosaVariablesMultiple('SWM Missed Service','collect_assist','rad_collectassist','rad_collectassist');   //good
+    getCosaVariablesMultiple('SWM Missed Service','time_out','rad_timeout','rad_timeout');                     //good
+    getCosaVariablesMultiple('SWM Missed Service','alley','rad_alleyservice','rad_alleyservice');              //good
+    getCosaVariablesMultiple('SWM Missed Service','notice','rad_noticereceived','rad_noticereceived'); 
+    
+
+    
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^sw^working^txt_reason^txt_reason';
+		entry[2]='S#SWM Missed Service^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#SWM Missed Service^common^rad_missedservice^rad_missedservice';
+		entry[4]='M#SWM Missed Service^collect_assist^rad_collectassist^rad_collectassist';
+		entry[5]='M#SWM Missed Service^time_out^rad_timeout^rad_timeout';
+		entry[6]='M#SWM Missed Service^alley^rad_alleyservice^rad_alleyservice';
+		entry[7]='M#SWM Missed Service^notice^rad_noticereceived^rad_noticereceived';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='swm_outofcyclesvs_vof'){
+		/*v_get_config_variables('swm_outofcyclesvs_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','sw','working','txt_reason','txt_reason');                        // for Workings Page
+    getCosaVariablesSingle('SWM Out-of-Cycle Services','current_title','common','current_title','txt_currenttitle');
+    
+    getCosaVariablesMultiple('SWM Out-of-Cycle Services','common','rad_cycleoptions','rad_cycleoptions' );
+	
+	
+		
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^sw^working^txt_reason^txt_reason';
+		entry[2]='S#SWM Out-of-Cycle Services^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#SWM Out-of-Cycle Services^common^rad_cycleoptions^rad_cycleoptions';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='swm_serviceinfo_vof'){
+		/*v_get_config_variables('swm_serviceinfo_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','swm','working','txt_subject','txt_subject');                     // for Workings Page
+    getCosaVariablesSingle('Reason','solidwaste','working','txt_reason','txt_reason');      
+		
+	
+		*/
+		entry[0]='S#Subject^swm^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^solidwaste^working^txt_reason^txt_reason';
+		entry[2]='';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_barricades_vof'){
+		/*v_get_config_variables('tci_barricades_vof') ;  //get all variable for form with new codereplacing this
+		  
+    getCosaVariablesSingle('TCI Barricades','le_eventcode','common','le_eventcode','le_eventcode');        
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','streets','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesSingle('TCI Barricades','current_title','common','current_title','txt_currenttitle');  
+    getCosaVariablesMultiple('TCI Barricades','common','rad_barricadeconcern','rad_barricadeconcern');   
+    
+
+		*/
+		entry[0]='S#TCI Barricades^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^streets^working^txt_reason^txt_reason';
+		entry[3]='S#TCI Barricades^current_title^common^current_title^txt_currenttitle';
+		entry[4]='M#TCI Barricades^common^rad_barricadeconcern^rad_barricadeconcern';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_drainage_channel_vof'){
+		/*v_get_config_variables('tci_drainage_channel_vof') ;  //get all variable for form with new codereplacing this
+		  getCosaVariablesSingle('TCI Drainage Channel','current_title','common','current_title','txt_currenttitle');
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','stormwater','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('TCI Drainage Channel','common','rad_issue','rad_issue');
+    getCosaVariablesMultiple('TCI Drainage Channel','flow','rad_nonflowloc','rad_nonflowloc');
+    getCosaVariablesMultiple('TCI Drainage Channel','flooded','rad_propertyflooded','rad_propertyflooded');
+		
+
+		
+		*/
+		entry[0]='S#TCI Drainage Channel^current_title^common^current_title^txt_currenttitle';
+		entry[1]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^stormwater^working^txt_reason^txt_reason';
+		entry[3]='M#TCI Drainage Channel^common^rad_issue^rad_issue';
+		entry[4]='M#TCI Drainage Channel^flow^rad_nonflowloc^rad_nonflowloc';
+		entry[5]='';
+		entry[6]='M#TCI Drainage Channel^flooded^rad_propertyflooded^rad_propertyflooded';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_draininfrastruct_vof'){
+		/*v_get_config_variables('tci_draininfrastruct_vof') ;  //get all variable for form with new codereplacing this
+		 
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','stormwater','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('TCI Drainage Infrastructure','common','rad_issue','rad_issue');
+    getCosaVariablesMultiple('TCI Drainage Infrastructure','common','rad_manholelocation','rad_manholelocation');
+    getCosaVariablesMultiple('TCI Drainage Infrastructure','common','rad_barricadepresent','rad_barricadepresent');
+    getCosaVariablesMultiple('TCI Drainage Infrastructure','common','rad_nonflowloc','rad_nonflowloc');
+    getCosaVariablesMultiple('TCI Drainage Infrastructure','common','rad_propertyflooded','rad_propertyflooded');
+		
+	
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^stormwater^working^txt_reason^txt_reason';
+		entry[2]='M#TCI Drainage Infrastructure^common^rad_issue^rad_issue';
+		entry[3]='M#TCI Drainage Infrastructure^common^rad_manholelocation^rad_manholelocation';
+		entry[4]='M#TCI Drainage Infrastructure^common^rad_barricadepresent^rad_barricadepresent';
+		entry[5]='M#TCI Drainage Infrastructure^common^rad_nonflowloc^rad_nonflowloc';
+		entry[6]='M#TCI Drainage Infrastructure^common^rad_propertyflooded^rad_propertyflooded';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='tci_pavementmarkings_vof'){
+		/*v_get_config_variables('tci_pavementmarkings_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','traffic_ops','working','txt_reason','txt_reason');                 // for Workings Page
+   
+    getCosaVariablesMultiple('TCI Pavement Markings','common','rad_pavementconcern','rad_pavementconcern'); 
+		
+
+		
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^traffic_ops^working^txt_reason^txt_reason';
+		entry[2]='M#TCI Pavement Markings^common^rad_pavementconcern^rad_pavementconcern';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_pavementrepair_vof'){
+		/*v_get_config_variables('tci_pavementrepair_vof') ;  //get all variable for form with new codereplacing this
+		     
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','streets','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesSingle('TCI Pavement Repair','current_title','common','current_title','txt_currenttitle'); 
+    
+//    getCosaVariablesMultiple('TCI Pavement Repair','common','rad_repairconcern','rad_repairconcern');
+    getCosaVariablesMultiple('TCI Pavement Repair','humps','rad_humpconcern','rad_humpconcern');  
+    getCosaVariablesMultiple('TCI Pavement Repair','manhole','rad_barricadeevent','rad_barricadeevent'); 
+    getCosaVariablesMultiple('TCI Pavement Repair','construction','rad_constructconcern','rad_constructconcern'); 
+    getCosaVariablesMultiple('TCI Pavement Repair','damage','rad_guardrailconcern','rad_guardrailconcern');
+    getCosaVariablesMultiple('TCI Pavement Repair','common','rad_drainageconcern1','rad_drainageconcern1');
+    getCosaVariablesMultiple('TCI Pavement Repair','common','rad_drainageconcern2','rad_drainageconcern2');
+    getCosaVariablesMultiple('TCI Pavement Repair','unknown','rad_constructoptions','rad_constructoptions');
+	
+
+
+			
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^streets^working^txt_reason^txt_reason';
+		entry[2]='S#TCI Pavement Repair^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#TCI Pavement Repair^humps^rad_humpconcern^rad_humpconcern';
+		entry[4]='M#TCI Pavement Repair^manhole^rad_barricadeevent^rad_barricadeevent)';
+		entry[5]='M#TCI Pavement Repair^construction^rad_constructconcern^rad_constructconcern';
+		entry[6]='M#TCI Pavement Repair^damage^rad_guardrailconcern^rad_guardrailconcern';
+		entry[7]='M#TCI Pavement Repair^common^rad_drainageconcern1^rad_drainageconcern1';
+		entry[8]='M#TCI Pavement Repair^common^rad_drainageconcern2^rad_drainageconcern2';
+		entry[9]='M#TCI Pavement Repair^unknown^rad_constructoptions^rad_constructoptions';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_schoolflashers_vof'){
+		/*v_get_config_variables('tci_schoolflashers_vof') ;  //get all variable for form with new codereplacing this
+		 
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','traffic_ops','working','txt_reason','txt_reason');                 // for Workings Page
+    
+
+    getCosaVariablesMultiple('TCI School Flashers','common','rad_flasherconcern','rad_flasherconcern'); 
+    getCosaVariablesMultiple('TCI School Flashers','maint','rad_maintconcern','rad_maintconcern'); 
+    getCosaVariablesMultiple('TCI School Flashers','damage','rad_damageconcern','rad_damageconcern');    
+    getCosaVariablesMultiple('TCI School Flashers','sign','rad_signconcern','rad_signconcern'); 
+    getCosaVariablesMultiple('TCI School Flashers','beacon','rad_signonbeacon','rad_signonbeacon'); 
+		
+
+		
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^traffic_ops^working^txt_reason^txt_reason';
+		entry[2]='M#TCI School Flashers^common^rad_flasherconcern^rad_flasherconcern';
+		entry[3]='M#TCI School Flashers^maint^rad_maintconcern^rad_maintconcern';
+		entry[4]='M#TCI School Flashers^damage^rad_damageconcern^rad_damageconcern';
+		entry[5]='M#TCI School Flashers^sign^rad_signconcern^rad_signconcern';
+		entry[6]='M#TCI School Flashers^beacon^rad_signonbeacon^rad_signonbeacon';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_sidewalkinvest_vof'){
+		/*v_get_config_variables('tci_sidewalkinvest_vof') ;  //get all variable for form with new codereplacing this
+		  
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','streets','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesSingle('TCI Sidewalk Investigation','current_title','common','current_title','txt_currenttitle');  
+	
+
+		
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^streets^working^txt_reason^txt_reason';
+		entry[2]='S#TCI Sidewalk Investigation^current_title^common^current_title^txt_currenttitle';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+if (form_name=='tci_street_sweeping_vof'){
+		/*v_get_config_variables('tci_street_sweeping_vof') ;  //get all variable for form with new codereplacing this
+		
+		  getCosaVariablesSingle('TCI Street Sweeping','le_eventcode','common','le_eventcode','le_eventcode');
+    getCosaVariablesSingle('TCI Street Sweeping','current_title','common','current_title','txt_currenttitle');
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','stormwater','working','txt_reason','txt_reason');                 // for Workings Page
+
+    getCosaVariablesMultiple('TCI Street Sweeping','common','rad_issue','rad_issue');
+	
+		*/
+		entry[0]='S#TCI Street Sweeping^le_eventcode^common^le_eventcode^le_eventcode';
+		entry[1]='S#TCI Street Sweeping^current_title^common^current_title^txt_currenttitle';
+		entry[2]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[3]='S#Reason^stormwater^working^txt_reason^txt_reason';
+		entry[4]='M#TCI Street Sweeping^common^rad_issue^rad_issue';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_trafficsignals_vof'){
+		/*v_get_config_variables('tci_trafficsignals_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','traffic_ops','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesSingle('TCI Traffic Signals','current_title','common','current_title','txt_currenttitle');  
+
+// radio buttons    
+    getCosaVariablesMultiple('TCI Traffic Signals','common','rad_signalconcern','rad_signalconcern'); 
+    getCosaVariablesMultiple('TCI Traffic Signals','bulb','rad_bulblist','rad_bulblist');         
+    getCosaVariablesMultiple('TCI Traffic Signals','direction','rad_traveldirection','rad_traveldirection'); 
+    getCosaVariablesMultiple('TCI Traffic Signals','damage','rad_damageconcern','rad_damageconcern'); 
+    getCosaVariablesMultiple('TCI Traffic Signals','new','rad_newsignaltype','rad_newsignaltype');
+		
+		
+		
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^traffic_ops^working^txt_reason^txt_reason';
+		entry[2]='S#TCI Traffic Signals^current_title^common^current_title^txt_currenttitle';
+		entry[3]='M#TCI Traffic Signals^common^rad_signalconcern^rad_signalconcern';
+		entry[4]='M#TCI Traffic Signals^bulb^rad_bulblist^rad_bulblist';
+		entry[5]='M#TCI Traffic Signals^direction^rad_traveldirection^rad_traveldirection';
+		entry[6]='M#TCI Traffic Signals^damage^rad_damageconcern^rad_damageconcern';
+		entry[7]='M#TCI Traffic Signals^new^rad_newsignaltype^rad_newsignaltype';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_trafficsigns_vof'){
+		/*v_get_config_variables('tci_trafficsigns_vof') ;  //get all variable for form with new codereplacing this
+		 getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','traffic_ops','working','txt_reason','txt_reason');                 // for Workings Page
+    getCosaVariablesSingle('TCI Traffic Signs','current_title','common','current_title','txt_currenttitle');  
+
+		
+		
+		*/
+		entry[0]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[1]='S#Reason^traffic_ops^working^txt_reason^txt_reason';
+		entry[2]='S#TCI Traffic Signs^current_title^common^current_title^txt_currenttitle';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='tci_visual_obstruct_vof'){
+		/*v_get_config_variables('tci_visual_obstruct_vof') ;  //get all variable for form with new codereplacing this
+		
+		
+    getCosaVariablesSingle('TCI Visual Obstruct','current_title','common','current_title','txt_currenttitle');
+    getCosaVariablesSingle('Subject','tci','working','txt_subject','txt_subject');                // for Workings Page
+    getCosaVariablesSingle('Reason','traffic_ops','working','txt_reason','txt_reason');          
+	
+	and
+	 getCosaVariablesMultiple('TCI Visual Obstruct','median','rad_medianissue','rad_medianissue');
+    getCosaVariablesMultiple('TCI Visual Obstruct','signtype','rad_signtype','rad_signtype');
+    getCosaVariablesMultiple('TCI Visual Obstruct','blocksign','rad_blocksign','rad_blocksign');
+			
+  
+		
+		*/
+		entry[0]='S#TCI Visual Obstruct^current_title^common^current_title^txt_currenttitle';
+		entry[1]='S#Subject^tci^working^txt_subject^txt_subject';
+		entry[2]='S#Reason^traffic_ops^working^txt_reason^txt_reason';
+		entry[3]='M#TCI Visual Obstruct^median^rad_medianissue^rad_medianissue';
+		entry[4]='M#TCI Visual Obstruct^signtype^rad_signtype^rad_signtype';
+		entry[5]='M#TCI Visual Obstruct^blocksign^rad_blocksign^rad_blocksign';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+if (form_name=='xxx'){
+		/*v_get_config_variables(xxx) ;  //get all variable for form with new codereplacing this
+		
+		
+		*/
+		entry[0]='';
+		entry[1]='';
+		entry[2]='';
+		entry[3]='';
+		entry[4]='';
+		entry[5]='';
+		entry[6]='';
+		entry[7]='';
+		entry[8]='';
+		entry[9]='';
+		entry[10]='';
+		entry[11]='';
+		entry[12]='';
+		entry[13]='';
+		entry[14]='';
+		entry[15]='';
+		entry[16]='';
+		entry[17]='';
+		entry[18]='';
+		entry[19]='';
+		how_many_entries=entry.length;
+	}//end if (form_name==xxx
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		for(i=0;i<how_many_entries;i++){
+			if(variable_list!=''&& entry[i]!=''){variable_list=variable_list+'~'+entry[i];}//end if(variable_list!='')
+			if(variable_list==''&& entry[i]!=''){variable_list=entry[i];}
+			
+		}//end for
+	
+	
+	
+	if(variable_list!=''){
+			console.log('v_get_config_variables processing values for form: '+form_name);
+			console.log('variable_list: '+variable_list);
+			KDF.customdata('v_get_config_variables_all', 'kdf_ready_variable_load', true, true, {'variable_list':variable_list});
+	}
+	
+	
+}

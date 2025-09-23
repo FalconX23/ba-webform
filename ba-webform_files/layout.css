@@ -1,0 +1,97 @@
+#dform_container .container {
+	width: 100%;
+    clear: both;
+}
+#dform_container .container > .one,
+#dform_container .container > .two,
+#dform_container .container > .three,
+#dform_container .container > .four,
+#dform_container .container > .five,
+#dform_container .container > .six,
+#dform_container .container > .seven,
+#dform_container .container > .eight,
+#dform_container .container > .nine,
+#dform_container .container > .ten,
+#dform_container .container > .eleven {
+    margin-right: 3.8%;
+    float: left;
+    min-height: 1px;
+}
+#dform_container .container > .none {
+    width: 0%;
+}
+#dform_container .container > .one {
+    width: 4.85%;
+}
+#dform_container .container > .two {
+    width: 13.45%;
+}
+#dform_container .container > .three {
+    width: 22.05%;
+}
+#dform_container .container > .four {
+    width: 30.75%;
+}
+#dform_container .container > .five {
+    width: 39.45%;
+}
+#dform_container .container > .six {
+    width: 48%;
+}
+#dform_container .container > .seven {
+    width: 56.75%;
+}
+#dform_container .container > .eight {
+    width: 65.4%;
+}
+#dform_container .container > .nine {
+    width: 74.05%;
+}
+#dform_container .container > .ten {
+    width: 82.7%;
+}
+#dform_container .container > .eleven {
+    width: 91.35%;
+}
+#dform_container .container > .twelve {
+    width: 100%;
+    float: left;
+}
+#dform_container .container > .last {
+    margin-right: 0px;
+}
+
+
+/* Mobile */
+
+@media handheld,
+only screen and (max-width: 768px) {
+	#dform_container .container {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #dform_container .container > .none,
+    #dform_container .container > .one,
+    #dform_container .container > .two,
+    #dform_container .container > .three,
+    #dform_container .container > .four,
+    #dform_container .container > .five,
+    #dform_container .container > .six,
+    #dform_container .container > .seven,
+    #dform_container .container > .eight,
+    #dform_container .container > .nine,
+    #dform_container .container > .ten,
+    #dform_container .container > .eleven,
+    #dform_container .container > .twelve {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

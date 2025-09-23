@@ -1,18 +1,26 @@
-<div id="lightning-out"></div>
-<script src="https://cosaedd--ccgdev.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
-<script>
-    $Lightning.use(
-        'c:baWebformApp', // name of the Lightning Out (beta) app
-        function () { // callback after the framework and app load
-            $Lightning.createComponent(
-                'c:baWebform', // top-level component of the Lightning Out (beta) app
-                {}, // attributes to set on the component
-                'lightning-out', // DOM element ID where the component is inserted
-                function (cmp) { // callback after the component loads
-                    console.log('The component was created.');
-                }
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div id="lightning-out"></div>
+        <script src="https://cosaedd--ccgdev.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
+        <script>
+            $Lightning.use(
+                'c:baWebformApp', // name of the Lightning Out (beta) app
+                function () { // callback after the framework and app load
+                    $Lightning.createComponent(
+                        'c:baWebform', // top-level component of the Lightning Out (beta) app
+                        {}, // attributes to set on the component
+                        'lightning-out', // DOM element ID where the component is inserted
+                        function (cmp) { // callback after the component loads
+                            console.log('The component was created.');
+                        }
+                    );
+                },
+                'https://cosaedd--ccgdev.sandbox.my.site.com/cosaedd' // Experience Cloud site endpoint
             );
-        },
-        'https://cosaedd--ccgdev.sandbox.my.site.com/cosaedd' // Experience Cloud site endpoint
-    );
-</script>
+        </script>
+    </body>
+</html>

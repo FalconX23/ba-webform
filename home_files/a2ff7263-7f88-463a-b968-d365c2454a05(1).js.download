@@ -1,0 +1,372 @@
+﻿var openFormsData = 
+{
+  "organizationId": 257,
+  "planName": 40,
+  "hasEmailNotifications": false,
+  "skipAutoCaptchaCheck": true,
+  "name": "Contact Economic Development",
+  "formVersionId": 110994,
+  "formId": 28745,
+  "formVersionNumber": 12,
+  "themeId": 1517,
+  "formReference": "a2ff7263-7f88-463a-b968-d365c2454a05",
+  "isTest": false,
+  "lang": "en-AU",
+  "receiptNumberPrefix": "",
+  "displayFormat": 1,
+  "hasCaptcha": true,
+  "showHeader": true,
+  "showProgressBar": true,
+  "showSectionTitle": false,
+  "gatewaySettings": {},
+  "showSaveButton": false,
+  "sections": [
+    {
+      "sectionElementId": "407818",
+      "sectionId": 445971,
+      "name": "",
+      "sequence": 0,
+      "description": "",
+      "cssClassName": "",
+      "shouldStopSubmission": false,
+      "fields": [
+        {
+          "placeholder": "",
+          "regEx": "",
+          "regexErrorText": "",
+          "defaultValue": "",
+          "fieldElementId": "2706178",
+          "fieldId": 2982559,
+          "inputType": 2,
+          "type": "Textbox",
+          "label": "Name",
+          "visibilityType": 0,
+          "fieldSetFieldId": 2378,
+          "sequence": 0,
+          "isRequired": true,
+          "isCalculated": false,
+          "requiredErrorMessage": "Enter your name.",
+          "autoCompleteAttribute": "name",
+          "dataConnections": [],
+          "displayRuleSets": [],
+          "computedFieldChangeHash": "6SbW7kbLAmBpFmFtI/Va5qEsaac=",
+          "isPublished": false
+        },
+        {
+          "otherTextbox": false,
+          "pollType": "",
+          "otherLabel": "Other",
+          "userListDefaultValue": [],
+          "userListRequiredValue": [],
+          "lines": [
+            {
+              "text": "Email",
+              "value": "Email",
+              "selected": false,
+              "lineId": "G3YS66fbd",
+              "isRequired": false
+            },
+            {
+              "text": "Phone",
+              "value": "Phone",
+              "selected": false,
+              "lineId": "TArrwoVT3",
+              "isRequired": false
+            },
+            {
+              "text": "No Reply",
+              "value": "No Reply",
+              "selected": true,
+              "lineId": "XpjuKyNeV",
+              "isRequired": false
+            }
+          ],
+          "fieldElementId": "2706179",
+          "fieldId": 2982560,
+          "inputType": 6,
+          "type": "Radio",
+          "label": "Please contact using",
+          "visibilityType": 0,
+          "fieldSetFieldId": 2379,
+          "sequence": 1,
+          "isRequired": true,
+          "isCalculated": false,
+          "requiredErrorMessage": "Enter your contact preference.",
+          "autoCompleteAttribute": "",
+          "dataConnections": [],
+          "displayRuleSets": [],
+          "computedFieldChangeHash": "eq5N8tBl8O71VcCbbdK1ZW/1VFo=",
+          "isPublished": false
+        },
+        {
+          "placeholder": "",
+          "isRespondent": true,
+          "defaultValue": "",
+          "hasConfirmation": false,
+          "fieldElementId": "2706180",
+          "fieldId": 2982561,
+          "inputType": 15,
+          "type": "Email",
+          "label": "Email",
+          "visibilityType": 3,
+          "fieldSetFieldId": 2382,
+          "sequence": 2,
+          "isRequired": true,
+          "isCalculated": false,
+          "displayRuleAction": 1,
+          "requiredErrorMessage": "Enter your email address.",
+          "autoCompleteAttribute": "email",
+          "dataConnections": [],
+          "displayRuleSets": [
+            {
+              "logicRuleSetId": 1419747,
+              "logicRules": [
+                {
+                  "logicRuleId": 1748455,
+                  "fieldElementId": "2706179",
+                  "fieldId": 0,
+                  "operation": 1,
+                  "compareToValue": "Email",
+                  "compareToFieldElementId": "",
+                  "lineId": "G3YS66fbd",
+                  "isOtherValue": false,
+                  "basedOnTodayDate": false,
+                  "fieldInputType": 6
+                }
+              ]
+            }
+          ],
+          "computedFieldChangeHash": "UZ0tLWWIeScw8fAM7WMRdciBp9k=",
+          "isPublished": false
+        },
+        {
+          "placeholder": "",
+          "isRespondent": true,
+          "defaultValue": "",
+          "hasConfirmation": false,
+          "fieldElementId": "2706181",
+          "fieldId": 2982562,
+          "inputType": 15,
+          "type": "Email",
+          "label": "Email (Optional)",
+          "visibilityType": 3,
+          "fieldSetFieldId": 2383,
+          "sequence": 3,
+          "isRequired": false,
+          "isCalculated": false,
+          "displayRuleAction": 2,
+          "requiredErrorMessage": "",
+          "autoCompleteAttribute": "email",
+          "dataConnections": [],
+          "displayRuleSets": [
+            {
+              "logicRuleSetId": 1419748,
+              "logicRules": [
+                {
+                  "logicRuleId": 1748456,
+                  "fieldElementId": "2706179",
+                  "fieldId": 0,
+                  "operation": 1,
+                  "compareToValue": "Email",
+                  "compareToFieldElementId": "",
+                  "lineId": "G3YS66fbd",
+                  "isOtherValue": false,
+                  "basedOnTodayDate": false,
+                  "fieldInputType": 6
+                }
+              ]
+            }
+          ],
+          "computedFieldChangeHash": "zuRFb9ZxhEl0QdQM/08AmlgyJhU=",
+          "isPublished": false
+        },
+        {
+          "placeholder": "",
+          "maxLength": 14,
+          "regEx": "^(\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3} [0-9]{3} [0-9]{4}|[0-9]{3}\\.[0-9]{3}\\.[0-9]{4}|[0-9]{10}) *$",
+          "regexErrorText": "Please enter a valid phone number. (Ex. 210-555-1234)",
+          "defaultValue": "",
+          "fieldElementId": "2706182",
+          "fieldId": 2982563,
+          "inputType": 2,
+          "type": "Textbox",
+          "label": "Phone",
+          "visibilityType": 3,
+          "fieldSetFieldId": 2380,
+          "sequence": 4,
+          "isRequired": true,
+          "isCalculated": false,
+          "displayRuleAction": 1,
+          "requiredErrorMessage": "Enter your phone number.",
+          "autoCompleteAttribute": "tel",
+          "dataConnections": [],
+          "displayRuleSets": [
+            {
+              "logicRuleSetId": 1419749,
+              "logicRules": [
+                {
+                  "logicRuleId": 1748457,
+                  "fieldElementId": "2706179",
+                  "fieldId": 0,
+                  "operation": 1,
+                  "compareToValue": "Phone",
+                  "compareToFieldElementId": "",
+                  "lineId": "TArrwoVT3",
+                  "isOtherValue": false,
+                  "basedOnTodayDate": false,
+                  "fieldInputType": 6
+                }
+              ]
+            }
+          ],
+          "computedFieldChangeHash": "/ZtezNpIzRY0Or49Zp/FuYPkGrE=",
+          "isPublished": false
+        },
+        {
+          "placeholder": "",
+          "maxLength": 14,
+          "regEx": "^(\\([0-9]{3}\\) [0-9]{3}-[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3} [0-9]{3} [0-9]{4}|[0-9]{3}\\.[0-9]{3}\\.[0-9]{4}|[0-9]{10}) *$",
+          "regexErrorText": "Please enter a valid phone number. (Ex. 210-555-1234)",
+          "defaultValue": "",
+          "fieldElementId": "2706183",
+          "fieldId": 2982564,
+          "inputType": 2,
+          "type": "Textbox",
+          "label": "Phone (Optional)",
+          "visibilityType": 3,
+          "fieldSetFieldId": 2381,
+          "sequence": 5,
+          "isRequired": false,
+          "isCalculated": false,
+          "displayRuleAction": 2,
+          "requiredErrorMessage": "",
+          "autoCompleteAttribute": "tel",
+          "dataConnections": [],
+          "displayRuleSets": [
+            {
+              "logicRuleSetId": 1419750,
+              "logicRules": [
+                {
+                  "logicRuleId": 1748458,
+                  "fieldElementId": "2706179",
+                  "fieldId": 0,
+                  "operation": 1,
+                  "compareToValue": "Phone",
+                  "compareToFieldElementId": "",
+                  "lineId": "TArrwoVT3",
+                  "isOtherValue": false,
+                  "basedOnTodayDate": false,
+                  "fieldInputType": 6
+                }
+              ]
+            }
+          ],
+          "computedFieldChangeHash": "5tPXMUZ4p1gMfyLyKe9+Yf6qz4A=",
+          "isPublished": false
+        },
+        {
+          "placeholder": "",
+          "rows": 4,
+          "regEx": "",
+          "regexErrorText": "",
+          "defaultValue": "",
+          "fieldElementId": "2706184",
+          "fieldId": 2982565,
+          "inputType": 2,
+          "type": "Textbox",
+          "label": "Comments or Questions",
+          "visibilityType": 0,
+          "fieldSetFieldId": 2385,
+          "sequence": 6,
+          "isRequired": true,
+          "isCalculated": false,
+          "requiredErrorMessage": "Enter your message.",
+          "autoCompleteAttribute": "",
+          "dataConnections": [],
+          "displayRuleSets": [],
+          "computedFieldChangeHash": "6SbW7kbLAmBpFmFtI/Va5qEsaac=",
+          "isPublished": false
+        },
+        {
+          "otherTextbox": false,
+          "pollType": "",
+          "otherLabel": "Other",
+          "userListDefaultValue": [],
+          "userListRequiredValue": [],
+          "lines": [
+            {
+              "text": "Customer Service",
+              "value": "Customer Service",
+              "selected": false,
+              "lineId": "qzwiRcbp1",
+              "isRequired": false
+            },
+            {
+              "text": "International Relations",
+              "value": "International Relations",
+              "selected": false,
+              "lineId": "Z_hzWcOMv",
+              "isRequired": false
+            },
+            {
+              "text": "Business Advancement (Industry)",
+              "value": "Business Advancement (Industry)",
+              "selected": false,
+              "lineId": "tDO7YwYMM",
+              "isRequired": false
+            },
+            {
+              "text": "Small Business",
+              "value": "Small Business",
+              "selected": false,
+              "lineId": "zySnB3c-5",
+              "isRequired": false
+            },
+            {
+              "text": "Medium-to-Large Business",
+              "value": "Medium-to-Large Business",
+              "selected": false,
+              "lineId": "OcZG8JjSu",
+              "isRequired": false
+            },
+            {
+              "text": "Media Inquiries",
+              "value": "Media Inquiries",
+              "selected": false,
+              "lineId": "A6Ly0aw7t",
+              "isRequired": false
+            }
+          ],
+          "fieldElementId": "2706185",
+          "fieldId": 2982566,
+          "inputType": 4,
+          "type": "Dropdown",
+          "label": "I would like to contact",
+          "visibilityType": 0,
+          "sequence": 7,
+          "isRequired": false,
+          "isCalculated": false,
+          "requiredErrorMessage": "",
+          "externalId": "contact",
+          "dataConnections": [],
+          "displayRuleSets": [],
+          "computedFieldChangeHash": "CD3YO5BFkmLvHPLLosGFst9RdIM=",
+          "isPublished": false
+        }
+      ],
+      "displayRuleSets": [],
+      "dataConnections": [],
+      "computedSectionChangeHash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk="
+    }
+  ],
+  "groups": [],
+  "officeUseOnlyGroups": [],
+  "formLoadDataConnections": [],
+  "formSubmissionRuleSets": [],
+  "isFormSubmissionRuleEnabled": false,
+  "formLogicViolatedTitle": "Submission criteria not met",
+  "formLogicViolatedMessage": "We're sorry. Your answers didn't meet our criteria, so we can't accept your submission. Please contact us for more information.\r\rWant to keep the details you've entered for now? Go back and save your progress.",
+  "isUnavailable": false,
+  "hasSnippets": false
+}
+;

@@ -1,0 +1,50 @@
+
+
+
+body {
+font-family: 'Roboto', sans-serif !important;
+}
+
+button {
+font-family: 'Roboto', sans-serif !important;
+}
+
+.of-colour-primary {
+background-color: #333333 !important;
+}
+
+.of-colour-primary-border {
+border-color: #333333 !important;
+}
+
+.of-colour-secondary {
+background-color: #c4403d !important;
+}
+
+.of-colour-destructive {
+background-color: #333333 !important;
+}
+
+.of-nav-btn {
+
+}
+
+
+
+
+
+
+
+/*
+.character-hint-error {
+    color: #5a5a5a;
+}
+input.of-validation-error {
+    border: 2px solid #5a5a5a;
+}
+*/
+.form-emphasis-box-1 {
+    border-left: 6px solid #8B0E04;
+    display: block;
+    padding: 5px 20px;
+}

@@ -41,23 +41,53 @@
         </script>
     </head>
     <body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
-        <div id="lightning-out"></div>
-        <script src="https://cosaedd--ccguat.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
-        <script>
-            $Lightning.use(
-                'c:baWebformApp', // name of the Lightning Out (beta) app
-                function () { // callback after the framework and app load
-                    $Lightning.createComponent(
-                        'c:baWebform', // top-level component of the Lightning Out (beta) app
-                        {}, // attributes to set on the component
-                        'lightning-out', // DOM element ID where the component is inserted
-                        function (cmp) { // callback after the component loads
-                            console.log('The component was created.');
-                        }
-                    );
-                },
-                'https://cosaedd--ccguat.sandbox.my.site.com/eddincentives' // Experience Cloud site endpoint
-            );
-        </script>
+
+        <div id="core">
+            <div class="of-body ">
+                <div class="formbackground"></div>
+                <div class="of-formbox preview">
+                    <div class="of-form-container">
+                        <div></div>
+                        <div class="of-display-header of-display-header-alternate">
+                            <div class="of-theme-item-header">
+                                <div class="of-logo"><img src="./home_files/COSA - 175x175px.png" alt="Selected Logo" height="80"></div>
+                                <h1 class="of-title ">Contact Economic Development</h1>
+                            </div>
+                            <div class="of-header-border of-colour-primary"></div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="of-display-body">
+                                    <div id="lightning-out"></div>
+                                    <script src="https://cosaedd--ccguat.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
+                                    <script>
+                                        $Lightning.use(
+                                            'c:baWebformApp', // name of the Lightning Out (beta) app
+                                            function () { // callback after the framework and app load
+                                                $Lightning.createComponent(
+                                                    'c:baWebform', // top-level component of the Lightning Out (beta) app
+                                                    {}, // attributes to set on the component
+                                                    'lightning-out', // DOM element ID where the component is inserted
+                                                    function (cmp) { // callback after the component loads
+                                                        console.log('The component was created.');
+                                                    }
+                                                );
+                                            },
+                                            'https://cosaedd--ccguat.sandbox.my.site.com/eddincentives' // Experience Cloud site endpoint
+                                        );
+                                    </script>
+                                </div>
+                            </div>
+                            <!-- <div class="of-display-navigation" role="group" aria-label="Button group with 1 buttons">
+                                <button id="of-button-submit" type="button" class="of-nav-next of-nav-btn of-colour-secondary">
+                                    <div class="inner-border of-colour-secondary-inner-border"></div>
+                                    <div class="overlay">Submit</div>
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -2895,11 +2895,11 @@ th {
 [type=radio]:not(:checked)+label,
 [type=radio]:checked+label {
     position: relative;
-    padding-left: 35px;
+    padding-left: 30px;
     cursor: pointer;
     display: inline;
-    min-height: 25px;
-    line-height: 25px;
+    min-height: 22px;
+    /* line-height: 22px; */
     /* font-size: 1rem; */
     -webkit-transition: .28s ease;
     -moz-transition: .28s ease;
@@ -2940,12 +2940,12 @@ table [type=radio]+label:after {
 
 [type=radio]:not(:checked)+label:before {
     border-radius: 50%;
-    border: 2px solid #5a5a5a
+    border: 1px solid #5a5a5a
 }
 
 [type=radio]:not(:checked)+label:after {
     border-radius: 50%;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #5a5a5a;
     z-index: -1;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -2956,7 +2956,7 @@ table [type=radio]+label:after {
 
 [type=radio]:checked+label:before {
     border-radius: 50%;
-    border: 2px solid #5a5a5a
+    border: 1px solid #5a5a5a
 }
 
 [type=radio]:checked+label:after {

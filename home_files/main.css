@@ -2897,10 +2897,10 @@ th {
     position: relative;
     padding-left: 35px;
     cursor: pointer;
-    display: inline-block;
+    display: inline;
     min-height: 25px;
     line-height: 25px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     -webkit-transition: .28s ease;
     -moz-transition: .28s ease;
     -o-transition: .28s ease;
